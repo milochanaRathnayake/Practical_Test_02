@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/second.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="float-container">
+		<div class="float-child">
+			<h2>Insert New Hospital</h2>
+			<form action="/healthcare-hospital-api/api/hospital" method="POST">
+				<label for="name">Hospital name :</label><br> <input
+					type="text" id="name" name="name"><br> <br> <label
+					for="address">Address :</label><br> <input type="text"
+					id="address" name="address"><br> <br> <label
+					for="contact">Contact No :</label><br> <input type="number"
+					min="0" id="contact" name="phone"><br> <br> <label
+					for="email">Email:</label><br> <input type="email" id="email"
+					name="email"><br> <br> <input type="submit"
+					value="Add" id="insertHospital">
+			</form>
+		</div>
+
+		<div class="float-child">
+			<h2>View Hospital</h2>
+			<form action="">
+				<label for="name">Hospital ID:</label><br> <input
+					type="number" id="v_id" name="name"><br> <label
+					for="name">Hospital name :</label><br> <input type="text"
+					id="v_name" name="name"><br> <br> <label
+					for="address">Address :</label><br> <input type="text"
+					id="v_address" name="address"><br> <br> <label
+					for="contact">Contact No :</label><br> <input type="text"
+					id="v_contact" name="contact"><br> <br> <label
+					for="email">Email:</label><br> <input type="text" id="v_email"
+					name="email"><br> <br> <input type="button"
+					value="View" id="viewHospital">
+			</form>
+		</div>
+	</div>
+
+	<div class="float-container">
+		<div class="float-child">
+			<h2 style="text-align: center">Update Hospital</h2>
+			<form action="/healthcare-hospital-api/api/hospital" method="POST">
+				<label for="name">Hospital name :</label><br> <input
+					type="text" id="u_name" name="name"><br> <br> <label
+					for="address">Address :</label><br> <input type="text"
+					id="u_address" name="address"><br> <br> <label
+					for="contact">Contact No :</label><br> <input type="text"
+					id="u_contact" name="contact"><br> <br> <label
+					for="email">Email:</label><br> <input type="text" id="u_email"
+					name="email"><br> <br> <input type="button"
+					value="Update" id="updateHospital">
+			</form>
+		</div>
+
+		<div class="float-child">
+			<h2>Delete Hospital</h2>
+			<form method="post" action="">
+				<label for="name">Hospital name :</label><br> <input
+					type="text" id="name" name="name"><br> <br> <label
+					for="address">Address :</label><br> <input type="text"
+					id="address" name="address"><br> <br> <input
+					type="submit" value="Delete">
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

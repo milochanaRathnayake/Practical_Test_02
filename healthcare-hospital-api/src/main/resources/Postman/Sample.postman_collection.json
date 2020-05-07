@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "8b1ce446-6b9f-41e1-b592-812e76271a5a",
+		"name": "Sample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Insert New Hospital",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hospital_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "KPH Kurunagala",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Kurunagala",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "0328549654",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "kphk@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "appointment_room_no",
+							"value": "KPH1",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Room 1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/healthcare-hospital-api/hospital",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"healthcare-hospital-api",
+						"hospital"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"admin\",\n\t\"password\":\"admin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/healthcare-hospital-api/hospital/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"healthcare-hospital-api",
+						"hospital",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Hospital",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hospital_id",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "KPH Kurunagala",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Kurunagala",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "0328549654",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "kphk@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "appointment_room_no",
+							"value": "KPH1",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "App Room 1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/healthcare-hospital-api/hospital",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"healthcare-hospital-api",
+						"hospital"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Hospital",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hospital_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/healthcare-hospital-api/hospital",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"healthcare-hospital-api",
+						"hospital"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
